@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="erica" created="November 3, 2019 at 6:18:23 PM EST" modified="November 6, 2019 at 12:05:39 PM EST" specVersion="50" urnVersion="1.27" nextGlobalID="1200">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="erica" created="November 3, 2019 at 6:18:23 PM EST" modified="November 6, 2019 at 6:22:17 PM EST" specVersion="51" urnVersion="1.27" nextGlobalID="1201">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="LukeIsLoiteringInTheRestAreas" id="8">
@@ -431,6 +431,7 @@
       <connections xsi:type="ucm.map:NodeConnection" source="377" target="407" outBindings="//@urndef/@specDiagrams.2/@nodes.12/@bindings.0/@out.0"/>
       <connections xsi:type="ucm.map:NodeConnection" source="407" target="360"/>
       <connections xsi:type="ucm.map:NodeConnection" source="414" target="189" outBindings="//@urndef/@specDiagrams.2/@nodes.14/@bindings.0/@out.0"/>
+      <comments description="Luke the Loitering teen (15) who goes to school. He comes to the mall at least once a week to hang out with his friends after class. He loves video games and records, but never has more than 20$ on him, so he spends hours looking at his wishlist, but rarely buys anything. He sometimes eats at the mall, but only the cheap fast-food options because he has to get back home rapidly as to not get grounded by his parents. Because his parents insist he eats healthy food at home, he eats at the mall even less than he shops, so he is a Shopper type of user. He is a neutral user.&#xD;&#xA;" x="97" y="512" width="1142" height="100" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Door" id="416" parentStub="//@urndef/@specDiagrams.2/@nodes.2/@bindings.0 //@urndef/@specDiagrams.2/@nodes.14/@bindings.0">
       <nodes xsi:type="ucm.map:StartPoint" name="Ready to Use Door" id="417" x="212" y="265" succ="//@urndef/@specDiagrams.3/@connections.0" inBindings="//@urndef/@specDiagrams.2/@nodes.2/@bindings.0/@in.0 //@urndef/@specDiagrams.2/@nodes.14/@bindings.0/@in.0">
