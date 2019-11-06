@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Bubble" created="November 3, 2019 1:46:15 PM EST" modified="November 3, 2019 1:53:22 PM EST" specVersion="4" urnVersion="1.27" nextGlobalID="12">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Bubble" created="November 3, 2019 1:46:15 PM EST" modified="November 6, 2019 4:19:32 PM EST" specVersion="22" urnVersion="1.27" nextGlobalID="163">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="ScenarioDef8" id="8"/>
     </scenarioGroups>
   </ucmspec>
   <grlspec>
+    <intElements name="Increase assistance to customers" id="17" refs="18"/>
+    <intElements name="Increase Profit" id="24" linksDest="110 111" refs="29"/>
+    <intElements name="Goal28" id="28" type="Goal"/>
+    <intElements name="Increase Sales" id="32" linksDest="112 113" linksSrc="110" type="Goal" refs="33"/>
+    <intElements name="Decrease Loss" id="34" linksDest="130 131" linksSrc="111" type="Goal" refs="35"/>
+    <intElements name="Decrease theft" id="38" linksDest="129" linksSrc="130" type="Goal" refs="39"/>
+    <intElements name="Security Devices" id="46" linksSrc="129" type="Task" refs="47"/>
+    <intElements name="Decrease damaged goods" id="50" linksDest="128" linksSrc="131" type="Goal" refs="51"/>
+    <intElements name="Cash Registers" id="54" linksSrc="119" type="Task" refs="55"/>
+    <intElements name="Displays" id="56" linksSrc="128" type="Task" refs="57"/>
+    <intElements name="Increase Services Offered" id="62" type="Goal" refs="63"/>
+    <intElements name="Operate Cash Register" id="72" linksDest="114 115 116" linksSrc="113" type="Goal" refs="73"/>
+    <intElements name="Restock" id="74" linksDest="156" linksSrc="112" type="Goal" refs="75"/>
+    <intElements name="Process Payment" id="78" linksDest="119" linksSrc="115" type="Task" refs="79"/>
+    <intElements name="Encourage Membership" id="80" linksDest="125" linksSrc="114" type="Task" refs="81"/>
+    <intElements name="Answer Customer Requests" id="84" type="Task" refs="85"/>
+    <intElements name="Improve Customer Satisfaction" id="92" refs="93"/>
+    <intElements name="Pack Merchandise" id="96" linksDest="117" linksSrc="116" type="Task" refs="97"/>
+    <intElements name="Bags" id="100" linksSrc="138" type="Task" refs="101"/>
+    <intElements name="Containers" id="102" linksSrc="137" type="Task" refs="103"/>
+    <intElements name="Packing" id="106" linksDest="137 138" linksSrc="117" type="Task" decompositionType="Xor" refs="107"/>
+    <intElements name="Point Card" id="121" linksSrc="125" type="Task" refs="122"/>
+    <intElements name="Cabins" id="140" type="Task" refs="141"/>
+    <intElements name="Display" id="142" type="Task" refs="143"/>
+    <intElements name="Mannequin" id="144" type="Task" refs="145"/>
+    <intElements name="Basket" id="148" type="Task" refs="149"/>
+    <intElements name="Merchandise" id="152" linksSrc="156" type="Task" refs="153"/>
+    <actors name="Employee" id="13" contRefs="14 23"/>
+    <actors name="Eaton Center" id="42" contRefs="43 89"/>
+    <actors name="Actor88" id="88"/>
+    <links xsi:type="grl:Contribution" name="Contribution110" id="110" refs="//@urndef/@specDiagrams.1/@connections.0" dest="24" src="32"/>
+    <links xsi:type="grl:Contribution" name="Contribution111" id="111" refs="//@urndef/@specDiagrams.1/@connections.1" dest="24" src="34"/>
+    <links xsi:type="grl:Contribution" name="Contribution112" id="112" refs="//@urndef/@specDiagrams.1/@connections.2" dest="32" src="74"/>
+    <links xsi:type="grl:Contribution" name="Contribution113" id="113" refs="//@urndef/@specDiagrams.1/@connections.3" dest="32" src="72"/>
+    <links xsi:type="grl:Contribution" name="Contribution114" id="114" refs="//@urndef/@specDiagrams.1/@connections.4" dest="72" src="80"/>
+    <links xsi:type="grl:Contribution" name="Contribution115" id="115" refs="//@urndef/@specDiagrams.1/@connections.5" dest="72" src="78"/>
+    <links xsi:type="grl:Contribution" name="Contribution116" id="116" refs="//@urndef/@specDiagrams.1/@connections.6" dest="72" src="96"/>
+    <links xsi:type="grl:Contribution" name="Contribution117" id="117" refs="//@urndef/@specDiagrams.1/@connections.7" dest="96" src="106"/>
+    <links xsi:type="grl:Contribution" name="Contribution119" id="119" refs="//@urndef/@specDiagrams.1/@connections.8" dest="78" src="54"/>
+    <links xsi:type="grl:Contribution" name="Contribution125" id="125" refs="//@urndef/@specDiagrams.1/@connections.9" dest="80" src="121"/>
+    <links xsi:type="grl:Contribution" name="Contribution128" id="128" refs="//@urndef/@specDiagrams.1/@connections.10" dest="50" src="56"/>
+    <links xsi:type="grl:Contribution" name="Contribution129" id="129" refs="//@urndef/@specDiagrams.1/@connections.11" dest="38" src="46"/>
+    <links xsi:type="grl:Contribution" name="Contribution130" id="130" refs="//@urndef/@specDiagrams.1/@connections.12" dest="34" src="38"/>
+    <links xsi:type="grl:Contribution" name="Contribution131" id="131" refs="//@urndef/@specDiagrams.1/@connections.13" dest="34" src="50"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition137" id="137" refs="//@urndef/@specDiagrams.1/@connections.14" dest="106" src="102"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition138" id="138" refs="//@urndef/@specDiagrams.1/@connections.15" dest="106" src="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution156" id="156" refs="//@urndef/@specDiagrams.1/@connections.16" dest="74" src="152"/>
     <groups name="StrategiesGroup5" id="5" strategies="6"/>
     <strategies name="EvaluationStrategy6" id="6" author="Bubble" group="5"/>
     <impactModel/>
@@ -16,11 +63,188 @@
     <featureModel/>
   </grlspec>
   <urndef>
-    <specDiagrams xsi:type="grl:GRLGraph" name="Goal Model" id="2">
-      <comments description="Employees of the eaton center&#xD;&#xA;" x="11" y="19" width="232" height="77" fillColor="255,255,200"/>
+    <specDiagrams xsi:type="grl:GRLGraph" name="GRL - Customer Assistance, Satisfaction" id="2">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef18" id="18" x="309" y="161" contRef="14" def="17">
+        <metadata name="_height" value="77"/>
+        <metadata name="_width" value="126"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef63" id="63" x="472" y="90" contRef="14" def="62">
+        <metadata name="_height" value="75"/>
+        <metadata name="_width" value="136"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef85" id="85" x="501" y="218" contRef="14" def="84">
+        <metadata name="_height" value="73"/>
+        <metadata name="_width" value="144"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef93" id="93" x="338" y="317" contRef="14" def="92">
+        <metadata name="_height" value="80"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef141" id="141" x="884" y="165" contRef="89" def="140">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef143" id="143" x="908" y="258" contRef="89" def="142">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef145" id="145" x="986" y="341" contRef="89" def="144">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef149" id="149" x="1048" y="242" contRef="89" def="148">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef14" id="14" x="274" y="35" width="471" height="459" contDef="13" nodes="18 63 85 93">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef89" id="89" x="818" y="74" width="372" height="351" contDef="42" nodes="141 143 145 149">
+        <label/>
+      </contRefs>
+      <comments description="Employees of the eaton center.&#xD;&#xA;" x="11" y="19" width="232" height="77" fillColor="255,255,200"/>
+    </specDiagrams>
+    <specDiagrams xsi:type="grl:GRLGraph" name="GRL - Increase Sales" id="21">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef29" id="29" x="249" y="324" contRef="23" pred="//@urndef/@specDiagrams.1/@connections.0 //@urndef/@specDiagrams.1/@connections.1" def="24">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef33" id="33" x="354" y="234" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.0" pred="//@urndef/@specDiagrams.1/@connections.2 //@urndef/@specDiagrams.1/@connections.3" def="32">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef35" id="35" x="367" y="396" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.12 //@urndef/@specDiagrams.1/@connections.13" def="34">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef39" id="39" x="491" y="485" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.12" pred="//@urndef/@specDiagrams.1/@connections.11" def="38">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="119"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef47" id="47" x="973" y="472" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.11" def="46">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef51" id="51" x="496" y="383" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.13" pred="//@urndef/@specDiagrams.1/@connections.10" def="50">
+        <metadata name="_height" value="78"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef55" id="55" x="951" y="198" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.8" def="54">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef57" id="57" x="915" y="392" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.10" def="56">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef73" id="73" x="492" y="261" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.4 //@urndef/@specDiagrams.1/@connections.5 //@urndef/@specDiagrams.1/@connections.6" def="72">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="131"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef75" id="75" x="498" y="139" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.16" def="74">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef79" id="79" x="662" y="265" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.5" pred="//@urndef/@specDiagrams.1/@connections.8" def="78">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef81" id="81" x="660" y="203" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.4" pred="//@urndef/@specDiagrams.1/@connections.9" def="80">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef97" id="97" x="660" y="329" contRef="23" succ="//@urndef/@specDiagrams.1/@connections.6" pred="//@urndef/@specDiagrams.1/@connections.7" def="96">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef101" id="101" x="1064" y="318" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.15" def="100">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef103" id="103" x="1059" y="247" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.14" def="102">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef107" id="107" x="927" y="283" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.7" pred="//@urndef/@specDiagrams.1/@connections.14 //@urndef/@specDiagrams.1/@connections.15" def="106">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef122" id="122" x="1075" y="150" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.9" def="121">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef153" id="153" x="970" y="127" contRef="43" succ="//@urndef/@specDiagrams.1/@connections.16" def="152">
+        <metadata name="_height" value="54"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef23" id="23" x="223" y="71" width="587" height="567" contDef="13" nodes="29 33 35 39 51 73 75 79 81 97">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef43" id="43" x="865" y="83" width="447" height="508" contDef="42" nodes="47 55 57 101 103 107 122 153">
+        <label/>
+      </contRefs>
+      <connections xsi:type="grl:LinkRef" source="33" target="29" link="110">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="35" target="29" link="111">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="75" target="33" link="112">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="73" target="33" link="113">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="81" target="73" link="114">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="79" target="73" link="115">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="97" target="73" link="116">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="107" target="97" link="117">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="55" target="79" link="119">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="122" target="81" link="125">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="57" target="51" link="128">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="47" target="39" link="129">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="39" target="35" link="130">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="51" target="35" link="131">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="103" target="107" link="137"/>
+      <connections xsi:type="grl:LinkRef" source="101" target="107" link="138"/>
+      <connections xsi:type="grl:LinkRef" source="153" target="75" link="156">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <comments description="Employees of the eaton center.&#xD;&#xA;" x="-54" y="54" width="232" height="77" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Use Case Map" id="3">
-      <comments description=" Veronica the Vegan, gluten-free, young adult (28) who works as a financial consultant at RBC downtown Montreal. She tries to balance a healthy life by doing lots of sports and yoga, but also by working and doing a Masters at McGill part-time. She is very busy and always goes to the Eaton centre to eat during lunch time and sometimes for supper, but she sticks with the restaurants she knows because of her strict diet. She shops mostly for yoga pants and professional attire when she has time, so she is mostly a Luncher type. She is a neutral user." x="3" y="19" width="474" height="211" fillColor="255,255,200"/>
+      <nodes xsi:type="ucm.map:StartPoint" name="Enter the Eaton Center" id="158" x="439" y="362" succ="//@urndef/@specDiagrams.2/@connections.0">
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint159" id="159" x="539" y="362" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.0"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="Exit the Eaton Center" id="160" x="639" y="362" pred="//@urndef/@specDiagrams.2/@connections.1">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <connections xsi:type="ucm.map:NodeConnection" source="158" target="159"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="159" target="160"/>
+      <comments description=" Veronica the Vegan, gluten-free, young adult (28) who works as a financial consultant at RBC downtown Montreal. She tries to balance a healthy life by doing lots of sports and yoga, but also by working and doing a Masters at McGill part-time. She is very busy and always goes to the Eaton centre to eat during lunch time and sometimes for supper, but she sticks with the restaurants she knows because of her strict diet. She shops mostly for yoga pants and professional attire when she has time after eating, so she is mostly a Luncher type. She often goes for coffee at teh Starbucks, where she is a regular member of, after lunch. She is a neutral user." x="3" y="19" width="566" height="194" fillColor="255,255,200"/>
     </specDiagrams>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
