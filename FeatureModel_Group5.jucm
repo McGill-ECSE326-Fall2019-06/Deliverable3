@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Bubble" created="November 6, 2019 3:21:09 PM EST" modified="November 6, 2019 3:35:27 PM EST" specVersion="29" urnVersion="1.27" nextGlobalID="593">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Bubble" created="November 6, 2019 at 6:14:18 PM EST" modified="November 6, 2019 at 6:22:20 PM EST" specVersion="35" urnVersion="1.27" nextGlobalID="628">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="ScenarioDef8" id="8"/>
@@ -17,14 +17,14 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Store" id="17" linksDest="350 349 242 243 244 333" linksSrc="348" type="Task" refs="18">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Hall" id="19" linksDest="80 82 83 340" linksSrc="24" type="Task" refs="20">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Transportation" id="28" linksDest="345 346 347" linksSrc="82" type="Task" decompositionType="Or" refs="29">
       <metadata name="_addAggregate" value="disable"/>
@@ -40,7 +40,7 @@
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="help" id="36" linksDest="99 100" linksSrc="80" type="Task" decompositionType="Or" refs="37">
+    <intElements xsi:type="fm:Feature" name="Help" id="36" linksDest="99 100" linksSrc="80" type="Task" decompositionType="Or" refs="37">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
@@ -55,8 +55,8 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Stairs" id="44" linksSrc="345" type="Task" refs="45">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Elevator" id="46" linksSrc="346" type="Task" refs="47">
       <metadata name="_addAggregate" value="disable"/>
@@ -75,17 +75,17 @@
     <intElements xsi:type="fm:Feature" name="Seating" id="56" linksDest="155 156" linksSrc="153" type="Task" refs="57">
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Waste collection" id="58" linksDest="365 366 367" linksSrc="152" type="Task" decompositionType="Or" refs="59">
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Garbage can" id="62" linksSrc="365" type="Task" refs="63">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Compost bin" id="64" linksSrc="366" type="Task" refs="65">
       <metadata name="_addAggregate" value="disable"/>
@@ -94,13 +94,13 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recycling bin" id="68" linksSrc="367" type="Task" refs="69">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Trays" id="70" linksSrc="357" type="Task" refs="71">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Plates" id="72" linksSrc="358" type="Task" refs="73">
       <metadata name="_addAggregate" value="disable"/>
@@ -122,7 +122,7 @@
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Food shops" id="114" linksDest="167 168 363 361" linksSrc="364" type="Task" refs="115">
+    <intElements xsi:type="fm:Feature" name="Food Counters" id="114" linksDest="167 168 363 361" linksSrc="364" type="Task" refs="115">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
@@ -130,37 +130,37 @@
     <intElements xsi:type="fm:Feature" name="Table" id="137" linksSrc="155" type="Task" refs="138">
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Chair" id="139" linksSrc="156" type="Task" refs="140">
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Kitchen" id="158" linksSrc="363" type="Task" refs="159">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Counter" id="160" linksSrc="168" type="Task" refs="161">
+    <intElements xsi:type="fm:Feature" name="Counter Display" id="160" linksSrc="168" type="Task" refs="161">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Cashier" id="162" linksDest="178 180" linksSrc="167" type="Task" refs="163">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Food Payment" id="172" linksDest="206 208" linksSrc="180" type="Task" refs="173 308">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="To-go countainer" id="174" linksSrc="178" type="Task" refs="175">
+    <intElements xsi:type="fm:Feature" name="To-go container" id="174" linksSrc="178" type="Task" refs="175">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
@@ -173,7 +173,7 @@
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Extra" id="186" linksDest="213 214 215" linksSrc="208" type="Task" decompositionType="Or" refs="311">
       <metadata name="_addAggregate" value="disable"/>
@@ -181,8 +181,8 @@
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Credit card" id="190" linksSrc="218" type="Task" refs="310">
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Debit card" id="192" linksSrc="217" type="Task" refs="314">
       <metadata name="_numEval" value="0"/>
@@ -193,8 +193,8 @@
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Cash" id="196" linksSrc="219" type="Task" refs="317">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Tip" id="198" linksSrc="213" type="Task" refs="309">
       <metadata name="_numEval" value="0"/>
@@ -225,13 +225,13 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Cash Register" id="229" linksDest="254 355" linksSrc="349" type="Task" refs="230">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Merchandise" id="233" linksDest="283 285" linksSrc="350" type="Task" decompositionType="Or" refs="234">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Bag" id="246" linksSrc="254" type="Task" refs="247">
       <metadata name="_addAggregate" value="disable"/>
@@ -253,8 +253,8 @@
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Display" id="266" linksSrc="283" type="Task" refs="267">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Mannequin" id="268" linksSrc="285" type="Task" refs="269">
       <metadata name="_numEval" value="0"/>
@@ -277,17 +277,19 @@
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20191106-153524643"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Store Payment" id="351" linksDest="588 590" linksSrc="355" type="Task" refs="352 555">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Regular2" id="556" linksDest="578 579 592 582" linksSrc="588" type="Task" decompositionType="Or" refs="557">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191106-181834341"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Extra 2" id="558" linksDest="583 584 593" linksSrc="590" type="Task" decompositionType="Or" refs="559">
       <metadata name="_addAggregate" value="disable"/>
@@ -295,8 +297,8 @@
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Cash 2" id="560" linksSrc="578" type="Task" refs="561">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Credit Card 2" id="562" linksSrc="579" type="Task" refs="563">
       <metadata name="_numEval" value="0"/>
@@ -419,6 +421,18 @@
         <kpiEvalValueSet/>
       </evaluations>
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="160">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="54">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="62">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="229">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="560">
         <kpiEvalValueSet/>
       </evaluations>
     </strategies>
@@ -643,8 +657,8 @@
         <metadata name="_height" value="54"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef352" id="352" x="526" y="302" succ="//@urndef/@specDiagrams.0/@connections.34" def="351">
-        <metadata name="_height" value="45"/>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef352" id="352" x="518" y="307" succ="//@urndef/@specDiagrams.0/@connections.34" def="351">
+        <metadata name="_height" value="57"/>
         <metadata name="_width" value="110"/>
       </nodes>
       <connections xsi:type="grl:LinkRef" source="20" target="14" link="24">
