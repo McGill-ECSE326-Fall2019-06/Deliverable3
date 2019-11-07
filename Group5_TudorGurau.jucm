@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="tudor" created="November 5, 2019 6:30:30 PM EST" modified="November 7, 2019 2:15:18 PM EST" specVersion="29" urnVersion="1.27" nextGlobalID="2383">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="tudor" created="November 5, 2019 6:30:30 PM EST" modified="November 7, 2019 2:29:50 PM EST" specVersion="30" urnVersion="1.27" nextGlobalID="2385">
   <ucmspec>
     <scenarioGroups name="James the Joyful Senior" id="7">
       <scenarios name="Relax at mall" id="8">
@@ -33,111 +33,111 @@
   </ucmspec>
   <grlspec>
     <intElements name="Increase overall revenue" id="2012" linksDest="2278 2279 2280" type="Goal" importance="High" importanceQuantitative="100" refs="2013 2277">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="34"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Increase shop revenue" id="2019" linksDest="2330 2331 2341" linksSrc="2280" type="Goal" refs="2020">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Increase food court revenue" id="2021" linksDest="2328 2329 2342 2364 2365" linksSrc="2279" type="Goal" refs="2022">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="-25"/>
+      <metadata name="_qualEval" value="WeaklyDenied"/>
     </intElements>
     <intElements name="Increase customer retention" id="2023" linksDest="2303 2304 2305" linksSrc="2278" type="Goal" refs="2024">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="68"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Fast service" id="2281" linksDest="2321 2322" linksSrc="2303" type="Goal" refs="2282">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Quality service" id="2283" linksDest="2323 2324 2366 2367" linksSrc="2304" type="Goal" refs="2284">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Quality products" id="2287" linksDest="2369 2375" linksSrc="2328 2330" type="Goal" refs="2288">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Affordable products" id="2289" linksDest="2370 2374 2376" linksSrc="2329 2331" type="Goal" refs="2290">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Information points" id="2293" linksSrc="2320" type="Task" refs="2294">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Map stands" id="2295" linksSrc="2319" type="Task" refs="2296">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Ease of travel" id="2299" linksDest="2318 2319 2320" linksSrc="2305" type="Goal" refs="2300">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Mobility aids" id="2306" description="escalator/elevator" linksSrc="2318" type="Task" refs="2307">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Helpful Employees" id="2310" linksSrc="2321 2323" type="Task" refs="2311">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Nice Employees" id="2314" linksSrc="2322 2324" type="Task" refs="2315">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Discounts" id="2333" linksSrc="2376" type="Task" refs="2334">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Product variety" id="2337" linksDest="2371 2373" linksSrc="2341 2342" type="Goal" refs="2338">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Many different stores" id="2346" linksSrc="2373 2374 2375" type="Task" refs="2347">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Many different food shops" id="2350" linksSrc="2369 2370 2371" type="Task" refs="2351">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Offer utensils" id="2352" linksSrc="2365 2367" type="Task" refs="2353">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Provide cleaning services" id="2360" linksSrc="2364 2366" type="Task" refs="2361">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Softgoal2378" id="2378" refs="2379">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <actors name="Investors" id="2008" contRefs="2009">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="34"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </actors>
     <links xsi:type="grl:Contribution" name="Contribution2278" id="2278" refs="//@urndef/@specDiagrams.1/@connections.0" dest="2012" src="2023" contribution="SomePositive" quantitativeContribution="50"/>
     <links xsi:type="grl:Contribution" name="Contribution2279" id="2279" refs="//@urndef/@specDiagrams.1/@connections.1" dest="2012" src="2021" contribution="SomePositive" quantitativeContribution="50"/>
@@ -170,7 +170,38 @@
     <links xsi:type="grl:Contribution" name="Contribution2375" id="2375" refs="//@urndef/@specDiagrams.1/@connections.28" dest="2287" src="2346" contribution="SomePositive" quantitativeContribution="50"/>
     <links xsi:type="grl:Contribution" name="Contribution2376" id="2376" refs="//@urndef/@specDiagrams.1/@connections.29" dest="2289" src="2333" contribution="SomePositive" quantitativeContribution="75"/>
     <groups name="StrategiesGroup5" id="5" strategies="6"/>
-    <strategies name="Investors_Strategy" id="6" author="tudor" group="5"/>
+    <strategies name="Investors_Strategy" id="6" author="tudor" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2333">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2350">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2346">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2360">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2352">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2310">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2314">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2306">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2295">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="2293">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
     <impactModel/>
     <indicatorGroup name="Time" id="9" isRedesignCategory="true"/>
     <indicatorGroup name="Cost" id="10" isRedesignCategory="true"/>
@@ -295,7 +326,7 @@
         <metadata name="_width" value="110"/>
       </nodes>
       <connections xsi:type="grl:LinkRef" source="2024" target="2277" link="2278">
-        <label deltaX="30" deltaY="-30"/>
+        <label deltaX="-15" deltaY="-59"/>
       </connections>
       <connections xsi:type="grl:LinkRef" source="2022" target="2277" link="2279">
         <label deltaX="30" deltaY="-30"/>
