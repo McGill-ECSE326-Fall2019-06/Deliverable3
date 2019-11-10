@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 4:59:01 PM EST" specVersion="6" urnVersion="1.27" nextGlobalID="296">
+  <ucmspec>
+    <scenarioGroups name="ScenarioGroup6" id="6">
+      <scenarios name="MainScenario" id="7"/>
+    </scenarioGroups>
+  </ucmspec>
+  <grlspec>
+    <groups name="StrategiesGroup4" id="4" strategies="5"/>
+    <strategies name="Regulator" id="5" author="Aweso" group="4"/>
+    <impactModel/>
+    <indicatorGroup name="Time" id="8" isRedesignCategory="true"/>
+    <indicatorGroup name="Cost" id="9" isRedesignCategory="true"/>
+    <indicatorGroup name="Quality" id="10" isRedesignCategory="true"/>
+    <indicatorGroup name="Flexibility" id="11" isRedesignCategory="true"/>
+    <featureModel/>
+  </grlspec>
+  <urndef>
+    <responsibilities name="Select Clothing Store" id="106" respRefs="107"/>
+    <responsibilities name="Browse Clothing" id="211" respRefs="212"/>
+    <responsibilities name="Select Clothing Articles" id="213" respRefs="214"/>
+    <responsibilities name="Responsibility284" id="284"/>
+    <responsibilities name="Scan Articles" id="288" respRefs="289"/>
+    <responsibilities name="Request Payment" id="290" respRefs="291"/>
+    <responsibilities name="Hand over Articles" id="293" respRefs="294"/>
+    <specDiagrams xsi:type="grl:GRLGraph" name="GRL - Stakeholder" id="2"/>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Top Level" id="3">
+      <nodes xsi:type="ucm.map:StartPoint" name="Enter Mall" id="71" x="58" y="344" succ="//@urndef/@specDiagrams.1/@connections.0">
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="Leave Mall" id="73" x="859" y="344" pred="//@urndef/@specDiagrams.1/@connections.5">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef107" id="107" x="225" y="344" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.7" respDef="106">
+        <label deltaX="25" deltaY="4"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:Stub" name="Visit Clothing Store" id="115" x="449" y="344" succ="//@urndef/@specDiagrams.1/@connections.2 //@urndef/@specDiagrams.1/@connections.4 //@urndef/@specDiagrams.1/@connections.6" pred="//@urndef/@specDiagrams.1/@connections.1">
+        <label deltaX="83" deltaY="-1"/>
+        <bindings plugin="108">
+          <in startPoint="110" stubEntry="//@urndef/@specDiagrams.1/@connections.1"/>
+          <out endPoint="111" stubExit="//@urndef/@specDiagrams.1/@connections.2"/>
+          <precondition label="" expression="true"/>
+        </bindings>
+      </nodes>
+      <nodes xsi:type="ucm.map:Stub" name="Purchase Clothing" id="129" x="636" y="344" succ="//@urndef/@specDiagrams.1/@connections.3 //@urndef/@specDiagrams.1/@connections.10" pred="//@urndef/@specDiagrams.1/@connections.2">
+        <label/>
+        <bindings plugin="122">
+          <in startPoint="124" stubEntry="//@urndef/@specDiagrams.1/@connections.2"/>
+          <out endPoint="125" stubExit="//@urndef/@specDiagrams.1/@connections.3"/>
+          <precondition label="" expression="true"/>
+        </bindings>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin171" id="171" x="772" y="344" succ="//@urndef/@specDiagrams.1/@connections.5" pred="//@urndef/@specDiagrams.1/@connections.3 //@urndef/@specDiagrams.1/@connections.9"/>
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin186" id="186" x="154" y="344" succ="//@urndef/@specDiagrams.1/@connections.7" pred="//@urndef/@specDiagrams.1/@connections.11 //@urndef/@specDiagrams.1/@connections.8"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow187" id="187" x="357" y="457" succ="//@urndef/@specDiagrams.1/@connections.8" pred="//@urndef/@specDiagrams.1/@connections.6"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow188" id="188" x="595" y="210" succ="//@urndef/@specDiagrams.1/@connections.9" pred="//@urndef/@specDiagrams.1/@connections.4"/>
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin197" id="197" x="124" y="344" succ="//@urndef/@specDiagrams.1/@connections.11" pred="//@urndef/@specDiagrams.1/@connections.0 //@urndef/@specDiagrams.1/@connections.12"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow198" id="198" x="375" y="543" succ="//@urndef/@specDiagrams.1/@connections.12" pred="//@urndef/@specDiagrams.1/@connections.13"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow200" id="200" x="619" y="506" succ="//@urndef/@specDiagrams.1/@connections.13" pred="//@urndef/@specDiagrams.1/@connections.10"/>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef220" id="220" x="115" y="151" width="690" height="447" contDef="219">
+        <label/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="71" target="197"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="107" target="115" inBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@in.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="115" target="129" inBindings="//@urndef/@specDiagrams.1/@nodes.4/@bindings.0/@in.0" outBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@out.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="129" target="171" outBindings="//@urndef/@specDiagrams.1/@nodes.4/@bindings.0/@out.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="115" target="188"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="171" target="73"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="115" target="187"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="186" target="107"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="187" target="186"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="188" target="171"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="129" target="200"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="197" target="186"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="198" target="197"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="200" target="198"/>
+      <comments description="Bree the Spree shopper (17) is a high school fashionista driven by an insatiable need to keep up with the latest clothing trends. For the last couple of years, each season, her parents give her a large enough allowance, no less than $300, to update her wardrobe. She often goes to the mall during weekends, sometimes the occasional weekday, to frequent a broad selection of clothing stores and add to her curated collection. Because of her fashion savviness, she has already become a member of over five different customer loyalty programs. Bree is a shopper type user and a promoter.&#xD;&#xA;" x="967" y="18" width="351" height="568" fillColor="255,255,200"/>
+    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Visit Clothing Store" id="108" parentStub="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0">
+      <nodes xsi:type="ucm.map:EndPoint" name="Wait in Line" id="111" x="953" y="344" pred="//@urndef/@specDiagrams.2/@connections.5" outBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@out.0">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:StartPoint" name="Enter Store" id="110" x="171" y="344" succ="//@urndef/@specDiagrams.2/@connections.0" inBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@in.0">
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork201" id="201" x="449" y="344" succ="//@urndef/@specDiagrams.2/@connections.1 //@urndef/@specDiagrams.2/@connections.2 //@urndef/@specDiagrams.2/@connections.3" pred="//@urndef/@specDiagrams.2/@connections.4"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="Look Elsewhere" id="203" x="952" y="451" pred="//@urndef/@specDiagrams.2/@connections.6">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="End Shopping Spree" id="205" x="942" y="555" pred="//@urndef/@specDiagrams.2/@connections.7">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef212" id="212" x="325" y="344" succ="//@urndef/@specDiagrams.2/@connections.4" pred="//@urndef/@specDiagrams.2/@connections.0" respDef="211">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef214" id="214" x="698" y="345" succ="//@urndef/@specDiagrams.2/@connections.5" pred="//@urndef/@specDiagrams.2/@connections.1" respDef="213">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow217" id="217" x="596" y="454" succ="//@urndef/@specDiagrams.2/@connections.6" pred="//@urndef/@specDiagrams.2/@connections.2"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow218" id="218" x="517" y="553" succ="//@urndef/@specDiagrams.2/@connections.7" pred="//@urndef/@specDiagrams.2/@connections.3"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="110" target="212"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="201" target="214">
+        <condition label="" expression="true"/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="201" target="217">
+        <condition label="" expression="true"/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="201" target="218">
+        <condition label="" expression="true"/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="212" target="201"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="214" target="111"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="217" target="203"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="218" target="205"/>
+    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Purchase Clothing" id="122" parentStub="//@urndef/@specDiagrams.1/@nodes.4/@bindings.0">
+      <nodes xsi:type="ucm.map:EndPoint" name="Leave Mall" id="125" x="974" y="283" contRef="275" pred="//@urndef/@specDiagrams.3/@connections.2" outBindings="//@urndef/@specDiagrams.1/@nodes.4/@bindings.0/@out.0">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:StartPoint" name="Approach Cash Register" id="124" x="258" y="209" contRef="275" succ="//@urndef/@specDiagrams.3/@connections.0" inBindings="//@urndef/@specDiagrams.1/@nodes.4/@bindings.0/@in.0">
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef289" id="289" x="240" y="416" contRef="281" succ="//@urndef/@specDiagrams.3/@connections.1" pred="//@urndef/@specDiagrams.3/@connections.3" respDef="288">
+        <label deltaX="-60" deltaY="-20"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef291" id="291" x="389" y="503" contRef="281" succ="//@urndef/@specDiagrams.3/@connections.2" pred="//@urndef/@specDiagrams.3/@connections.1" respDef="290">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow292" id="292" x="237" y="356" succ="//@urndef/@specDiagrams.3/@connections.3" pred="//@urndef/@specDiagrams.3/@connections.4"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef294" id="294" x="250" y="284" contRef="275" succ="//@urndef/@specDiagrams.3/@connections.4" pred="//@urndef/@specDiagrams.3/@connections.0" respDef="293">
+        <label deltaX="-78" deltaY="-11"/>
+      </nodes>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef275" id="275" x="141" y="97" width="921" height="230" contDef="219" nodes="125 124 294">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef281" id="281" x="141" y="385" width="933" height="164" contDef="280" nodes="289 291">
+        <label/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="124" target="294"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="289" target="291"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="291" target="125"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="292" target="289"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="294" target="292"/>
+    </specDiagrams>
+    <components name="Bree the Spree Shopper" id="219" fillColor="160,255,255" filled="true" contRefs="220 275" kind="Actor"/>
+    <components name="Cashier" id="280" fillColor="160,255,160" filled="true" contRefs="281" kind="Actor"/>
+  </urndef>
+  <metadata name="_Use0to100EvaluationRange" value="false"/>
+</urn:URNspec>
