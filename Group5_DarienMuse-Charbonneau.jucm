@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 5:15:27 PM EST" specVersion="11" urnVersion="1.27" nextGlobalID="488">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 5:30:20 PM EST" specVersion="21" urnVersion="1.27" nextGlobalID="531">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="MainScenario" id="7"/>
+      <scenarios name="EmptyHandsScenario" id="489"/>
     </scenarioGroups>
   </ucmspec>
   <grlspec>
+    <intElements name="Maximize Regulatory Compliance" id="494" refs="495"/>
+    <intElements name="Maximize Public Safety" id="498" type="Goal" refs="499"/>
+    <intElements name="Minimize Expenses" id="504" type="Goal" refs="505"/>
+    <intElements name="Maximize Public Satisfaction" id="508" type="Goal" refs="509"/>
+    <intElements name="Maximize Customer Satisfaction" id="518" refs="519"/>
+    <intElements name="Minimize Paperwork" id="522" type="Goal" refs="523"/>
+    <intElements name="Minimize Environmental Risks" id="528" type="Goal" refs="529"/>
+    <actors name="Regulator" id="490" fillColor="255,255,160" filled="true" contRefs="491"/>
+    <actors name="Eaton Centre" id="514" fillColor="160,160,255" filled="true" contRefs="515"/>
     <groups name="StrategiesGroup4" id="4" strategies="5"/>
-    <strategies name="Regulator" id="5" author="Aweso" group="4"/>
+    <strategies name="RegulatorStrategy" id="5" author="Aweso" group="4"/>
     <impactModel/>
     <indicatorGroup name="Time" id="8" isRedesignCategory="true"/>
     <indicatorGroup name="Cost" id="9" isRedesignCategory="true"/>
@@ -28,7 +38,42 @@
     <responsibilities name="Pay with Cash" id="359" respRefs="360"/>
     <responsibilities name="Pay with Gift Card" id="363" respRefs="364"/>
     <responsibilities name="Try Clothes" id="487" respRefs="488"/>
-    <specDiagrams xsi:type="grl:GRLGraph" name="GRL - Stakeholder" id="2"/>
+    <specDiagrams xsi:type="grl:GRLGraph" name="GRL - Regulator" id="2">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef495" id="495" x="342" y="57" contRef="491" def="494">
+        <metadata name="_height" value="76"/>
+        <metadata name="_width" value="135"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef499" id="499" x="357" y="140" contRef="491" def="498">
+        <metadata name="_width" value="106"/>
+        <metadata name="_height" value="88"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef505" id="505" x="962" y="142" contRef="515" def="504">
+        <metadata name="_width" value="116"/>
+        <metadata name="_height" value="86"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef509" id="509" x="357" y="240" contRef="491" def="508">
+        <metadata name="_height" value="92"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef519" id="519" x="965" y="57" contRef="515" def="518">
+        <metadata name="_height" value="76"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef523" id="523" x="967" y="233" contRef="515" def="522">
+        <metadata name="_height" value="76"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef529" id="529" x="352" y="340" contRef="491" def="528">
+        <metadata name="_height" value="100"/>
+        <metadata name="_width" value="126"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef491" id="491" x="119" y="29" width="574" height="575" contDef="490" nodes="495 499 509 529">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef515" id="515" x="777" y="30" width="489" height="568" contDef="514" nodes="519 505 523">
+        <label/>
+      </contRefs>
+    </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Top Level" id="3">
       <nodes xsi:type="ucm.map:StartPoint" name="Enter Mall" id="71" x="58" y="344" succ="//@urndef/@specDiagrams.1/@connections.0">
         <metadata name="_hits" value="0"/>
