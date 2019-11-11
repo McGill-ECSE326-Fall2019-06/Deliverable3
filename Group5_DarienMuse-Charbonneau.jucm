@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 8:27:32 PM EST" specVersion="32" urnVersion="1.27" nextGlobalID="628">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 8:32:53 PM EST" specVersion="34" urnVersion="1.27" nextGlobalID="640">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="SingleStoreScenario" id="7" description="Bree visits a store and makes a purchase there via her credit card. Satisfied with her purchase, she leaves the mall.">
@@ -43,21 +43,93 @@
     <enumerationTypes name="Payment_Method" id="532" values="Credit_Card,Cash,Gift_Card" instances="533"/>
   </ucmspec>
   <grlspec>
-    <intElements name="Maximize Regulatory Compliance" id="494" linksDest="602 603 604 605" refs="495"/>
-    <intElements name="Maximize Public Safety" id="498" linksDest="607 608 609" linksSrc="605" type="Goal" refs="499"/>
-    <intElements name="Maximize Public Satisfaction" id="508" linksDest="616 622" linksSrc="604" type="Goal" refs="509"/>
-    <intElements name="Minimize Environmental Risks" id="528" linksDest="614" linksSrc="603" type="Goal" refs="529"/>
-    <intElements name="Proper Waste Collection" id="561" linksSrc="614" type="Task" refs="562"/>
-    <intElements name="Security Cameras" id="565" linksSrc="607" type="Task" refs="566"/>
-    <intElements name="Maintained Elevators" id="569" linksSrc="608" type="Task" refs="570"/>
-    <intElements name="Clean Food Counters" id="573" linksSrc="626" type="Task" refs="574"/>
-    <intElements name="Minimize Health Risks" id="577" linksDest="624 625 626 627" linksSrc="602" type="Goal" refs="578"/>
-    <intElements name="Clean Kitchens" id="582" linksSrc="627" type="Task" refs="583"/>
-    <intElements name="Clean Bathrooms" id="586" linksSrc="616 624" type="Task" refs="587"/>
-    <intElements name="Maintained Escalators" id="594" linksSrc="609" type="Task" refs="595"/>
-    <intElements name="Clean Sitting Areas" id="618" linksSrc="622 625" type="Task" refs="619"/>
-    <actors name="Regulator" id="490" fillColor="255,255,160" filled="true" contRefs="491"/>
-    <actors name="Eaton Centre" id="514" fillColor="160,160,255" filled="true" contRefs="515"/>
+    <intElements name="Maximize Regulatory Compliance" id="494" linksDest="602 603 604 605" refs="495">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Maximize Public Safety" id="498" linksDest="607 608 609" linksSrc="605" type="Goal" refs="499">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Maximize Public Satisfaction" id="508" linksDest="616 622" linksSrc="604" type="Goal" refs="509">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Minimize Environmental Risks" id="528" linksDest="614" linksSrc="603" type="Goal" refs="529">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Proper Waste Collection" id="561" linksDest="637 638 639" linksSrc="614" type="Task" refs="562">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Security Cameras" id="565" linksSrc="607" type="Task" refs="566">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Maintained Elevators" id="569" linksSrc="608" type="Task" refs="570">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Clean Food Counters" id="573" linksSrc="626" type="Task" refs="574">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Minimize Health Risks" id="577" linksDest="624 625 626 627" linksSrc="602" type="Goal" refs="578">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Clean Kitchens" id="582" linksSrc="627" type="Task" refs="583">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Clean Bathrooms" id="586" linksSrc="616 624" type="Task" refs="587">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Maintained Escalators" id="594" linksSrc="609" type="Task" refs="595">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Clean Sitting Areas" id="618" linksSrc="622 625" type="Task" refs="619">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Recycling" id="629" linksSrc="637" type="Task" refs="630">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Garbage" id="631" linksSrc="638" type="Task" refs="632">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Compost" id="633" linksSrc="639" type="Task" refs="634">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <actors name="Regulator" id="490" fillColor="255,255,160" filled="true" contRefs="491">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
+    <actors name="Eaton Centre" id="514" fillColor="160,160,255" filled="true" contRefs="515">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
     <links xsi:type="grl:Contribution" name="Contribution602" id="602" refs="//@urndef/@specDiagrams.0/@connections.0" dest="494" src="577"/>
     <links xsi:type="grl:Contribution" name="Contribution603" id="603" refs="//@urndef/@specDiagrams.0/@connections.1" dest="494" src="528"/>
     <links xsi:type="grl:Contribution" name="Contribution604" id="604" refs="//@urndef/@specDiagrams.0/@connections.2" dest="494" src="508"/>
@@ -72,8 +144,42 @@
     <links xsi:type="grl:Contribution" name="Contribution625" id="625" refs="//@urndef/@specDiagrams.0/@connections.11" dest="577" src="618"/>
     <links xsi:type="grl:Contribution" name="Contribution626" id="626" refs="//@urndef/@specDiagrams.0/@connections.12" dest="577" src="573"/>
     <links xsi:type="grl:Contribution" name="Contribution627" id="627" refs="//@urndef/@specDiagrams.0/@connections.13" dest="577" src="582"/>
+    <links xsi:type="grl:Contribution" name="Contribution637" id="637" refs="//@urndef/@specDiagrams.0/@connections.14" dest="561" src="629" quantitativeContribution="33"/>
+    <links xsi:type="grl:Contribution" name="Contribution638" id="638" refs="//@urndef/@specDiagrams.0/@connections.15" dest="561" src="631" quantitativeContribution="33"/>
+    <links xsi:type="grl:Contribution" name="Contribution639" id="639" refs="//@urndef/@specDiagrams.0/@connections.16" dest="561" src="633" quantitativeContribution="34"/>
     <groups name="StrategiesGroup4" id="4" strategies="5"/>
-    <strategies name="RegulatorStrategy" id="5" author="Aweso" group="4"/>
+    <strategies name="RegulatorStrategy" id="5" author="Aweso" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="629">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="631">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="633">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="586">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="618">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="573">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="582">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="594">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="569">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="565">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
     <impactModel/>
     <indicatorGroup name="Time" id="8" isRedesignCategory="true"/>
     <indicatorGroup name="Cost" id="9" isRedesignCategory="true"/>
@@ -111,7 +217,7 @@
         <metadata name="_height" value="100"/>
         <metadata name="_width" value="126"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef562" id="562" x="796" y="275" contRef="515" succ="//@urndef/@specDiagrams.0/@connections.7" def="561">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef562" id="562" x="796" y="275" contRef="515" succ="//@urndef/@specDiagrams.0/@connections.7" pred="//@urndef/@specDiagrams.0/@connections.14 //@urndef/@specDiagrams.0/@connections.15 //@urndef/@specDiagrams.0/@connections.16" def="561">
         <metadata name="_width" value="130"/>
         <metadata name="_height" value="51"/>
       </nodes>
@@ -147,10 +253,22 @@
         <metadata name="_height" value="52"/>
         <metadata name="_width" value="110"/>
       </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef630" id="630" x="1020" y="219" contRef="515" succ="//@urndef/@specDiagrams.0/@connections.14" def="629">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef632" id="632" x="1012" y="286" contRef="515" succ="//@urndef/@specDiagrams.0/@connections.15" def="631">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef634" id="634" x="1005" y="355" contRef="515" succ="//@urndef/@specDiagrams.0/@connections.16" def="633">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef491" id="491" x="119" y="29" width="574" height="575" contDef="490" nodes="495 499 509 529 578">
         <label/>
       </contRefs>
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef515" id="515" x="777" y="30" width="489" height="568" contDef="514" nodes="562 566 570 574 583 587 595 619">
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef515" id="515" x="777" y="30" width="489" height="568" contDef="514" nodes="562 566 570 574 583 587 595 619 630 632 634">
         <label/>
       </contRefs>
       <connections xsi:type="grl:LinkRef" source="578" target="495" link="602">
@@ -194,6 +312,15 @@
       </connections>
       <connections xsi:type="grl:LinkRef" source="583" target="578" link="627">
         <label deltaX="-14" deltaY="-154"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="630" target="562" link="637">
+        <label deltaX="-25" deltaY="-59"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="632" target="562" link="638">
+        <label deltaX="-19" deltaY="-61"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="634" target="562" link="639">
+        <label deltaX="-18" deltaY="-56"/>
       </connections>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Top Level" id="3">
