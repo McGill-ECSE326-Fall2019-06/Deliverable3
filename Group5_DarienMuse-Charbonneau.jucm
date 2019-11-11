@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 5:30:20 PM EST" specVersion="21" urnVersion="1.27" nextGlobalID="531">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 7:31:48 PM EST" specVersion="24" urnVersion="1.27" nextGlobalID="552">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
-      <scenarios name="MainScenario" id="7"/>
+      <scenarios name="MainScenario" id="7">
+        <initializations value="0" variable="537"/>
+        <initializations value="0" variable="535"/>
+        <initializations value="1" variable="536"/>
+        <initializations value="1" variable="534"/>
+        <initializations value="Credit_Card" variable="533"/>
+        <initializations value="true" variable="538"/>
+      </scenarios>
       <scenarios name="EmptyHandsScenario" id="489"/>
     </scenarioGroups>
+    <variables name="Payment_Method" id="533" description="The payment type Bree will use during her spree. (Credit card, cash, gift card.)" type="enumeration" enumerationType="532"/>
+    <variables name="StoresToVisit" id="534" type="integer"/>
+    <variables name="StoresVisited" id="535" type="integer"/>
+    <variables name="PurchasesToMake" id="536" type="integer"/>
+    <variables name="PurchasesMade" id="537" type="integer"/>
+    <variables name="TryClothes" id="538"/>
+    <enumerationTypes name="Payment_Method" id="532" values="Credit_Card,Cash,Gift_Card" instances="533"/>
   </ucmspec>
   <grlspec>
     <intElements name="Maximize Regulatory Compliance" id="494" refs="495"/>
@@ -191,14 +205,16 @@
       <nodes xsi:type="ucm.map:OrFork" name="OrFork460" id="460" x="389" y="344" contRef="457" succ="//@urndef/@specDiagrams.2/@connections.8 //@urndef/@specDiagrams.2/@connections.9" pred="//@urndef/@specDiagrams.2/@connections.4">
         <metadata name="_hits" value="0"/>
       </nodes>
-      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin486" id="486" x="478" y="344" contRef="457" succ="//@urndef/@specDiagrams.2/@connections.10" pred="//@urndef/@specDiagrams.2/@connections.8 //@urndef/@specDiagrams.2/@connections.11">
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin486" id="486" x="478" y="344" contRef="457" succ="//@urndef/@specDiagrams.2/@connections.10" pred="//@urndef/@specDiagrams.2/@connections.12 //@urndef/@specDiagrams.2/@connections.13">
         <metadata name="_hits" value="0"/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef488" id="488" x="441" y="473" contRef="457" succ="//@urndef/@specDiagrams.2/@connections.11" pred="//@urndef/@specDiagrams.2/@connections.9" respDef="487">
         <metadata name="_hits" value="0"/>
         <label deltaX="5" deltaY="-44"/>
       </nodes>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef457" id="457" x="233" y="203" width="625" height="402" contDef="219" nodes="458 459 201 460 486 488">
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow549" id="549" x="445" y="344" contRef="457" succ="//@urndef/@specDiagrams.2/@connections.12" pred="//@urndef/@specDiagrams.2/@connections.8"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow552" id="552" x="473" y="431" contRef="457" succ="//@urndef/@specDiagrams.2/@connections.13" pred="//@urndef/@specDiagrams.2/@connections.11"/>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef457" id="457" x="233" y="203" width="625" height="402" contDef="219" nodes="458 459 201 460 486 488 549 552">
         <label/>
       </contRefs>
       <connections xsi:type="ucm.map:NodeConnection" source="110" target="212"/>
@@ -215,14 +231,16 @@
       <connections xsi:type="ucm.map:NodeConnection" source="214" target="111"/>
       <connections xsi:type="ucm.map:NodeConnection" source="458" target="203"/>
       <connections xsi:type="ucm.map:NodeConnection" source="459" target="205"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="460" target="486">
-        <condition label="" expression="true"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="460" target="549">
+        <condition deltaX="30" deltaY="36" label="don't try" expression="TryClothes == false" description="Bree decides not to try on clothes"/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="460" target="488">
-        <condition label="" expression="true"/>
+        <condition deltaX="73" deltaY="33" label="try on" expression="TryClothes == true" description="Bree tries on clothes"/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="486" target="201"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="488" target="486"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="488" target="552"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="549" target="486"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="552" target="486"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Purchase Clothing" id="122" parentStub="//@urndef/@specDiagrams.1/@nodes.4/@bindings.0">
       <nodes xsi:type="ucm.map:EndPoint" name="Continue Spree" id="125" x="1186" y="188" pred="//@urndef/@specDiagrams.3/@connections.16" outBindings="//@urndef/@specDiagrams.1/@nodes.4/@bindings.0/@out.1">
@@ -298,13 +316,13 @@
       <connections xsi:type="ucm.map:NodeConnection" source="292" target="289"/>
       <connections xsi:type="ucm.map:NodeConnection" source="294" target="292"/>
       <connections xsi:type="ucm.map:NodeConnection" source="298" target="358">
-        <condition label="" expression="true"/>
+        <condition deltaX="78" deltaY="20" label="credit" expression="Payment_Method == Credit_Card" description="Bree pays for clothing with a credit card"/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="298" target="360">
-        <condition label="" expression="true"/>
+        <condition deltaX="51" deltaY="31" label="cash" expression="Payment_Method == Cash" description="Bree pays for clothing with cash"/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="298" target="364">
-        <condition label="" expression="true"/>
+        <condition deltaX="76" label="giftcard" expression="Payment_Method == Gift_Card" description="Bree pays for clothing with a gift card"/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="318" target="356"/>
       <connections xsi:type="ucm.map:NodeConnection" source="350" target="381">
