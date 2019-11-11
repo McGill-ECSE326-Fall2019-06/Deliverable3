@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 8:35:35 PM EST" specVersion="35" urnVersion="1.27" nextGlobalID="640">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 8:39:46 PM EST" specVersion="36" urnVersion="1.27" nextGlobalID="640">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="SingleStoreScenario" id="7" description="Bree visits a store and makes a purchase there via her credit card. Satisfied with her purchase, she leaves the mall.">
@@ -44,28 +44,28 @@
   </ucmspec>
   <grlspec>
     <intElements name="Maximize Regulatory Compliance" id="494" linksDest="602 603 604 605" refs="495">
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="81"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Maximize Public Safety" id="498" linksDest="607 608 609" linksSrc="605" type="Goal" refs="499">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="83"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Maximize Public Satisfaction" id="508" linksDest="616 622" linksSrc="604" type="Goal" refs="509">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="74"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Minimize Environmental Risks" id="528" linksDest="614" linksSrc="603" type="Goal" refs="529">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="91"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Proper Waste Collection" id="561" linksDest="637 638 639" linksSrc="614" type="Task" refs="562">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="91"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Security Cameras" id="565" linksSrc="607" type="Task" refs="566">
       <metadata name="_addAggregate" value="disable"/>
@@ -84,8 +84,8 @@
     </intElements>
     <intElements name="Minimize Health Risks" id="577" linksDest="624 625 626 627" linksSrc="602" type="Goal" refs="578">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="86"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Clean Kitchens" id="582" linksSrc="627" type="Task" refs="583">
       <metadata name="_addAggregate" value="disable"/>
@@ -94,18 +94,18 @@
     </intElements>
     <intElements name="Clean Bathrooms" id="586" linksSrc="616 624" type="Task" refs="587">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Maintained Escalators" id="594" linksSrc="609" type="Task" refs="595">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="50"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Clean Sitting Areas" id="618" linksSrc="622 625" type="Task" refs="619">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Recycling" id="629" linksSrc="637" type="Task" refs="630">
       <metadata name="_addAggregate" value="disable"/>
@@ -119,8 +119,8 @@
     </intElements>
     <intElements name="Compost" id="633" linksSrc="639" type="Task" refs="634">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <actors name="Regulator" id="490" fillColor="255,255,160" filled="true" contRefs="491">
       <metadata name="_numEval" value="0"/>
@@ -155,13 +155,13 @@
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="631">
         <kpiEvalValueSet/>
       </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="633">
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="633">
         <kpiEvalValueSet/>
       </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="586">
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="586">
         <kpiEvalValueSet/>
       </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="618">
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="618">
         <kpiEvalValueSet/>
       </evaluations>
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="573">
@@ -170,7 +170,7 @@
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="582">
         <kpiEvalValueSet/>
       </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="594">
+      <evaluations evaluation="50" qualitativeEvaluation="WeaklySatisfied" intElement="594">
         <kpiEvalValueSet/>
       </evaluations>
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="569">
