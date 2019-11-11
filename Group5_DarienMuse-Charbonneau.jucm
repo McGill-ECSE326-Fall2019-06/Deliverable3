@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 7:58:36 PM EST" specVersion="27" urnVersion="1.27" nextGlobalID="559">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Aweso" created="November 10, 2019 4:28:32 PM EST" modified="November 10, 2019 8:03:33 PM EST" specVersion="28" urnVersion="1.27" nextGlobalID="560">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
-      <scenarios name="MainScenario" id="7">
+      <scenarios name="SingleStoreScenario" id="7" description="Bree visits a store and makes a purchase there via her credit card. Satisfied with her purchase, she leaves the mall.">
         <initializations value="0" variable="537"/>
         <initializations value="0" variable="535"/>
         <initializations value="1" variable="536"/>
@@ -12,7 +12,7 @@
         <initializations value="true" variable="553"/>
         <startPoints enabled="true" startPoint="71"/>
       </scenarios>
-      <scenarios name="EmptyHandsScenario" id="489">
+      <scenarios name="EmptyHandsScenario" id="489" description="Bree visits a single store, but does not find anything worthwhile and leaves the store immediately.">
         <initializations value="false" variable="553"/>
         <initializations value="Credit_Card" variable="533"/>
         <initializations value="0" variable="537"/>
@@ -20,6 +20,16 @@
         <initializations value="1" variable="534"/>
         <initializations value="0" variable="535"/>
         <initializations value="false" variable="538"/>
+        <startPoints enabled="true" startPoint="71"/>
+      </scenarios>
+      <scenarios name="SpreeScenario" id="560" description="Bree visits several stores and makes purchases at each store before leaving the mall.">
+        <initializations value="true" variable="553"/>
+        <initializations value="Credit_Card" variable="533"/>
+        <initializations value="0" variable="537"/>
+        <initializations value="5" variable="536"/>
+        <initializations value="5" variable="534"/>
+        <initializations value="0" variable="535"/>
+        <initializations value="true" variable="538"/>
         <startPoints enabled="true" startPoint="71"/>
       </scenarios>
     </scenarioGroups>
@@ -33,15 +43,42 @@
     <enumerationTypes name="Payment_Method" id="532" values="Credit_Card,Cash,Gift_Card" instances="533"/>
   </ucmspec>
   <grlspec>
-    <intElements name="Maximize Regulatory Compliance" id="494" refs="495"/>
-    <intElements name="Maximize Public Safety" id="498" type="Goal" refs="499"/>
-    <intElements name="Minimize Expenses" id="504" type="Goal" refs="505"/>
-    <intElements name="Maximize Public Satisfaction" id="508" type="Goal" refs="509"/>
-    <intElements name="Maximize Customer Satisfaction" id="518" refs="519"/>
-    <intElements name="Minimize Paperwork" id="522" type="Goal" refs="523"/>
-    <intElements name="Minimize Environmental Risks" id="528" type="Goal" refs="529"/>
-    <actors name="Regulator" id="490" fillColor="255,255,160" filled="true" contRefs="491"/>
-    <actors name="Eaton Centre" id="514" fillColor="160,160,255" filled="true" contRefs="515"/>
+    <intElements name="Maximize Regulatory Compliance" id="494" refs="495">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements name="Maximize Public Safety" id="498" type="Goal" refs="499">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements name="Minimize Expenses" id="504" type="Goal" refs="505">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements name="Maximize Public Satisfaction" id="508" type="Goal" refs="509">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements name="Maximize Customer Satisfaction" id="518" refs="519">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements name="Minimize Paperwork" id="522" type="Goal" refs="523">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements name="Minimize Environmental Risks" id="528" type="Goal" refs="529">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <actors name="Regulator" id="490" fillColor="255,255,160" filled="true" contRefs="491">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
+    <actors name="Eaton Centre" id="514" fillColor="160,160,255" filled="true" contRefs="515">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
     <groups name="StrategiesGroup4" id="4" strategies="5"/>
     <strategies name="RegulatorStrategy" id="5" author="Aweso" group="4"/>
     <impactModel/>
@@ -101,7 +138,7 @@
       </contRefs>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCM - Top Level" id="3">
-      <nodes xsi:type="ucm.map:StartPoint" name="Enter Mall" id="71" x="58" y="344" succ="//@urndef/@specDiagrams.1/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
+      <nodes xsi:type="ucm.map:StartPoint" name="Enter Mall" id="71" x="58" y="344" succ="//@urndef/@specDiagrams.1/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.2/@startPoints.0">
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
